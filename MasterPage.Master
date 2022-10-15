@@ -1,0 +1,32 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage.master.vb" Inherits="TP2_WEB2.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="Styles/Master.css" rel="stylesheet" type="text/css" />
+    <title>Inicio</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="navbar">
+                <ul>
+                    <li><a href="Login.aspx">Login</a></li>
+                    <li><a href="Informe.aspx">Informe</a></li>
+                </ul>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="footer">
+                <span>Alumno: FRANCO SOSA</span>
+                <span>Profesora: ALEJANDRA FARNETTI</span>
+                <span>APLICACIONES WEB 2</span>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
